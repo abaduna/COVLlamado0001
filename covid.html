@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COvid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pantalla">
+  <div  class="contenedor">
+    <h1>
+      Estadisticas
+    </h1><br>
+    <b>fecha</b> <input type="date" id="inputFechas"> <br>
+    <b>pais</b> <select name="" id="selecPais">
+      <option value="Spain">España</option>
+      <option value="Germany"> Alemania</option>
+      <option value="Argentina"> Argentina</option>
+      
+    </select>
+    <button id="btnAgragar">Estadisticas</button> <br>
+    <div>
+      <ul>
+        <li> today confirmed: <span id="today_confirmed"></span> </li>
+        <li> today deaths: <span id="today_deaths"></span>
+        <li> today hospitalised patients with symptoms: <span id="today_hospitalised_patients_with_symptoms"></span>
+        </li>
+        <li> today intensive care: <span id="today_intensive_care"></span> </li>
+        <li> today new confirmed: <span id="today_new_confirmed"></span> </li>
+        <li> today new deaths: <span id="today_new_deaths"></span> </li>
+        <li> today new hospitalised patients with symptoms: <span
+            id="today_new_hospitalised_patients_with_symptoms"></span> </li>
+        <li> today new intensive care: <span id="today_new_intensive_care"></span> </li>
+        <li>today new open cases: <span id="today_new_open_cases"></span> </li>
+        <li> today new_recovered: <span id="today_new_recovered"></span> </li>
+        <li> today new total hospitalised patients : <span id="today_new_total_hospitalised_patients"></span> </li>
+        <li> today open cases: <span id="today_open_cases"></span> </li>
+      </ul>
+    </div>
+  </div>
+  <script src="Apidecov.js"></script>
+</body>
+
+</html>
